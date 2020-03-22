@@ -1,4 +1,4 @@
 Flask==1.1.1
 flask-restplus==0.13.0
-Flask-Testing==0.8.0
 Werkzeug==0.16.1
+python-dateutil==2.8.1
