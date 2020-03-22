@@ -5,9 +5,9 @@ This application demonstrates API service with endpoint **/uptime** that returns
 ## Approach
 Implement a modular application, where each component/resource can be used independently. The primary consideration in this implementation was not to reinvent the wheel. Ex., rather than writing the OpenAPI spec file and integrating swagger-ui for application documentation instead, I have used Flask-restful for it.
 
-**Application Uptime(in secs):** Time elapsed since the application server was started. Used `before_first_request` and `after_this_request` hooks to calculate the time.
-**Api Response time(in ms):** Time took by the application server to process the request i.e., the time difference of request received and before sending a response back. Used `before_request` and `after_this_request` hooks to calculate the time.
-**Request Execution time(in ms):** Time spent on executing api logic. For `/uptime` api, time spent on getting the current date and time returning that response. Used a custom hook `execution_time` to calculate the time.
+* **Application Uptime(in secs):** Time elapsed since the application server was started. Used `before_first_request` and `after_this_request` hooks to calculate the time.
+* **Api Response time(in ms):** Time took by the application server to process the request i.e., the time difference of request received and before sending a response back. Used `before_request` and `after_this_request` hooks to calculate the time.
+* **Request Execution time(in ms):** Time spent on executing api logic. For `/uptime` api, time spent on getting the current date and time returning that response. Used a custom hook `execution_time` to calculate the time.
 
 ## Prerequisite
 * Python3
